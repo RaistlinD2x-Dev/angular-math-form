@@ -16,6 +16,14 @@ export class EquationComponent implements OnInit {
 
   constructor() { }
 
+  get a() {
+    return this.mathForm.value.a
+  }
+
+  get b() {
+    return this.mathForm.value.b
+  }
+
   ngOnInit(): void {
   }
 
