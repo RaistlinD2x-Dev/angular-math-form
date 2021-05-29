@@ -9,6 +9,8 @@ import { MathValidators } from '../math-validators';
   styleUrls: ['./equation.component.css']
 })
 export class EquationComponent implements OnInit {
+  secondsPerSolution: number = 0;
+
   mathForm = new FormGroup({
     a: new FormControl(this.randomNumber()),
     b: new FormControl(this.randomNumber()),
@@ -32,7 +34,7 @@ export class EquationComponent implements OnInit {
     this.mathForm.statusChanges.pipe(
       filter(value => value === 'VALID'),
       delay(100)
-    ).subscribe((value) => {
+    ).subscribe(() => {
       this.mathForm.setValue({
         a: this.randomNumber(),
         b: this.randomNumber(),
