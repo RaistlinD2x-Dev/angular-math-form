@@ -1,0 +1,37 @@
+form { 
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    font-size: 72px;
+}
+
+input {
+    font-size: 72px;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 20%;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+}
+
+.stats {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.debugging {
+    position: relative;
+    margin: 20px
+}
+
+.hr { 
+    margin-bottom: 200px
+}
+
