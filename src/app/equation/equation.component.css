@@ -35,3 +35,7 @@ input:focus {
     margin-bottom: 200px
 }
 
+.close {
+    background-color: rgba(255, 235, 60, 0.3)
+}
+
